@@ -51,7 +51,7 @@ function App() {
             HEY, I'm ESAIA GAPRINDASHVILI
           </div> */}
 
-          <p className="text">
+          {/* <p className="text">
             Highly trained in web development. Skilled in frontend
             <span className="text-dec">programming languages.</span> I have
             worked on various projects, with JavaScript, React. I also have
@@ -63,7 +63,7 @@ function App() {
               - PROJECTS
             </p>
             <p href="/">- MY SKILLS</p>
-          </div>
+          </div> */}
 
           <div className="icons">
             <FaFacebookSquare
@@ -74,7 +74,7 @@ function App() {
               fill={theme === "dark" ? "white" : "rgb(12, 11, 21);"}
             />
           </div>
-
+          {/* 
           <Toggle
             onChange={changeTheme}
             defaultChecked={theme === "light" ? true : false}
@@ -87,7 +87,7 @@ function App() {
             backgroundColorChecked="#1d3147"
             backgroundColorUnchecked="#e1e3e5"
             labelLeft={isDarkMode ? "Enable Light Mode" : "Enable Dark Mode"}
-          />
+          /> */}
         </motion.div>
 
         <h5 className="background_text">HELLO THERE</h5>
