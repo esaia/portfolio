@@ -15,10 +15,18 @@ function App() {
   const changeTheme = (e) => {
     theme === "dark" ? setTheme("light") : setTheme("dark");
     setisDarkMode(!isDarkMode);
+
     return isDarkMode;
   };
 
   useEffect(() => {
+    if (theme === "dark") {
+      document.body.style = "transition: none !important";
+      document.body.style = "background: rgb(12, 11, 21);";
+    } else {
+      document.body.style = "transition: all 0.5s";
+      document.body.style = "background: #ffffff;";
+    }
     localStorage.setItem("theme", theme);
   }, [theme]);
 
@@ -76,7 +84,7 @@ function App() {
 
           <Toggle
             onChange={changeTheme}
-            defaultChecked={theme === "light" ? true : false}
+            checked={theme === "light" ? false : true}
             value={theme}
             width={40}
             height={20}

@@ -19,14 +19,15 @@ $screen-sm-min: 576px;
   margin: 0px;
   font-family: "Unbounded", cursive;
   max-height: 100vh;
-
   color: white;
 }
 
-.mainApp {
+body {
   transition: all 0.5s;
+}
+.mainApp {
   height: 80vh;
-  max-height: 80vh;
+  transition: all 0.5s;
 }
 
 .textwrap {
