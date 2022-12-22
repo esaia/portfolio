@@ -27,6 +27,7 @@ function App() {
       document.body.style = "transition: all 0.5s";
       document.body.style = "background: #ffffff;";
     }
+
     localStorage.setItem("theme", theme);
   }, [theme]);
 

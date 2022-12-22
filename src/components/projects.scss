@@ -17,7 +17,7 @@ $screen-sm-min: 576px;
 
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .dark {
@@ -32,14 +32,9 @@ $screen-sm-min: 576px;
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 2fr);
-  justify-self: center;
-  align-self: center;
   overflow-y: scroll;
-  margin-top: 20px;
-  margin-bottom: 20px;
-
   @include sm {
-    height: 80vh;
+    height: 70vh;
   }
 }
 
@@ -67,8 +62,8 @@ $screen-sm-min: 576px;
 .card {
   background-color: rgb(6, 6, 6);
 
-  width: 90%;
-  height: 90%;
+  width: 95%;
+  height: 95%;
   display: flex;
   flex-direction: column;
   gap: 20px;
