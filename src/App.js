@@ -89,7 +89,7 @@ function App() {
           />
         </motion.div>
 
-        {/* <h5 className="background_text">HELLO THERE</h5> */}
+        <h5 className="background_text">HELLO THERE</h5>
 
         <AnimatePresence>
           {showProjects && (
