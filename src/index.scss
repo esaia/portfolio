@@ -23,6 +23,12 @@ $screen-sm-min: 576px;
   color: white;
 }
 
+.mainApp {
+  transition: all 0.5s;
+  height: 100vh;
+  max-height: 100vh;
+}
+
 .textwrap {
   text-align: center;
   max-width: 800px;
@@ -36,12 +42,8 @@ $screen-sm-min: 576px;
   user-select: none;
 }
 
-.mainApp {
-  transition: all 0.5s;
-  height: 80vh;
-}
 .text {
-  padding: 20px;
+  padding: 5px;
   color: rgb(219, 217, 217);
   font-weight: 100;
   font-family: "Rajdhani", sans-serif;
