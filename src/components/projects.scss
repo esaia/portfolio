@@ -1,0 +1,88 @@
+$screen-sm-min: 576px;
+@mixin sm {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+.projectmain {
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  color: rgb(20, 20, 20);
+  background-color: rgb(235, 231, 226);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.dark {
+  .projectmain {
+    background-color: rgb(2, 4, 15);
+  }
+}
+.projectsWrap {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  position: relative;
+  margin: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.exitIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 40px;
+  z-index: 101;
+}
+
+.card {
+  background-color: rgb(6, 6, 6);
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+
+  @include sm {
+    height: 150px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.2;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+
+  h4 {
+    z-index: 101;
+  }
+}
+
+.projectIcons {
+  display: flex;
+  gap: 10px;
+  z-index: 101;
+}
