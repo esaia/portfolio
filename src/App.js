@@ -46,9 +46,10 @@ function App() {
             },
           }}
         >
+          {/*           
           <div className="glitch" data-text="HEY, I'm ESAIA GAPRINDASHILI">
             HEY, I'm ESAIA GAPRINDASHVILI
-          </div>
+          </div> */}
 
           <p className="text">
             Highly trained in web development. Skilled in frontend
