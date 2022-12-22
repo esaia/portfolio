@@ -64,7 +64,7 @@ function App() {
             </p>
             <p href="/">- MY SKILLS</p>
           </div> */}
-
+          {/* 
           <div className="icons">
             <FaFacebookSquare
               fill={theme === "dark" ? "white" : "rgb(12, 11, 21);"}
@@ -73,7 +73,7 @@ function App() {
             <FaLinkedin
               fill={theme === "dark" ? "white" : "rgb(12, 11, 21);"}
             />
-          </div>
+          </div> */}
           {/* 
           <Toggle
             onChange={changeTheme}
