@@ -90,17 +90,17 @@ function App() {
           /> */}
         </motion.div>
 
-        <h5 className="background_text">HELLO THERE</h5>
+        {/* <h5 className="background_text">HELLO THERE</h5> */}
 
-        <AnimatePresence>
+        {/* <AnimatePresence>
           {showProjects && (
             <Projects
               showProjectsDiv={showProjectsDiv}
               isDarkMode={isDarkMode}
             />
           )}
-        </AnimatePresence>
-
+        </AnimatePresence> */}
+        {/* 
         <AnimatedCursor
           innerSize={5}
           outerSize={30}
@@ -127,7 +127,7 @@ function App() {
           innerStyle={{
             backgroundColor: "#B8B1B6",
           }}
-        />
+        /> */}
       </div>
     </div>
   );
