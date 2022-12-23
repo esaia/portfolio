@@ -39,10 +39,10 @@ const Projects = ({ isDarkMode, setShowProjects }) => {
                 <h4>{item.title}</h4>
                 <p>{item.description}</p>
                 <div className="projectIcons">
-                  <a href={item.githubURL} target="_blank">
+                  <a href={item.githubURL} target="_blank" rel="noreferrer">
                     <FaGithub fill="white" />
                   </a>
-                  <a href={item.websiteURL} target="_blank">
+                  <a href={item.websiteURL} target="_blank" rel="noreferrer">
                     <FaLink fill="white" />
                   </a>
                 </div>
