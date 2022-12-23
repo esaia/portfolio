@@ -5,7 +5,7 @@ import { data } from "../data";
 import "./projects.scss";
 import { FaGithub, FaLink } from "react-icons/fa";
 
-const Projects = ({ showProjectsDiv, isDarkMode }) => {
+const Projects = ({ isDarkMode, setShowProjects }) => {
   return (
     <motion.div
       className={`projectmain ${isDarkMode ? "dark" : "light"}`}
@@ -29,22 +29,27 @@ const Projects = ({ showProjectsDiv, isDarkMode }) => {
         <FaWindowClose
           className="exitIcon"
           fill="white"
-          onClick={showProjectsDiv}
+          onClick={() => setShowProjects(false)}
         />
 
-        {data.map((item) => {
+        {data.map((item, i) => {
           return (
-            <div className="gridEL" key={item.id}>
+            <div className="gridEL" key={i}>
               <div className="card">
                 <h4>{item.title}</h4>
+                <p>{item.description}</p>
                 <div className="projectIcons">
-                  <FaGithub fill="white" />
-                  <FaLink fill="white" />
+                  <a href={item.githubURL} target="_blank">
+                    <FaGithub fill="white" />
+                  </a>
+                  <a href={item.websiteURL} target="_blank">
+                    <FaLink fill="white" />
+                  </a>
                 </div>
 
                 <div className="skills">
-                  {item.skills.map((skill) => {
-                    return <p>{skill}</p>;
+                  {item.skills.map((skill, i) => {
+                    return <p key={i}>{skill}</p>;
                   })}
                 </div>
 

@@ -45,6 +45,7 @@ $screen-sm-min: 576px;
   color: rgb(0, 0, 0);
   font-size: 40px;
   z-index: 101;
+  cursor: pointer;
 }
 
 .gridEL {
@@ -55,7 +56,7 @@ $screen-sm-min: 576px;
   height: 300px;
 
   @include sm {
-    height: 200px;
+    height: auto;
   }
 }
 
@@ -66,10 +67,12 @@ $screen-sm-min: 576px;
   height: 95%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
   position: relative;
+  margin: 20px 0px;
+  min-height: 150px;
 
   img {
     width: 100%;
@@ -80,7 +83,7 @@ $screen-sm-min: 576px;
     transform: translate(-50%, -50%);
 
     object-fit: cover;
-    opacity: 0.2;
+    opacity: 0.4;
     transition: all 0.3s ease-in-out;
     &:hover {
       opacity: 0.3;
@@ -90,6 +93,20 @@ $screen-sm-min: 576px;
   h4 {
     z-index: 101;
   }
+
+  P {
+    font-size: 12px;
+    text-align: center;
+    max-width: 90%;
+    color: rgb(215, 209, 209);
+    z-index: 101;
+  }
+  @include sm {
+    font-size: 13px;
+    p {
+      font-size: 10px;
+    }
+  }
 }
 
 .skills {
@@ -98,6 +115,7 @@ $screen-sm-min: 576px;
   align-items: center;
   gap: 5px;
   flex-wrap: wrap;
+  max-width: 90%;
 
   p {
     font-size: 11px;
@@ -106,6 +124,7 @@ $screen-sm-min: 576px;
     color: #1d3147;
     padding: 1px 5px;
     z-index: 101;
+    margin-bottom: 5px;
 
     @include sm {
       font-size: 9px;
@@ -114,6 +133,13 @@ $screen-sm-min: 576px;
 }
 .projectIcons {
   display: flex;
-  gap: 10px;
+  gap: 20px;
+  cursor: pointer;
+  font-size: 20px;
   z-index: 101;
+
+  @include sm {
+    font-size: 15px;
+    gap: 10px;
+  }
 }

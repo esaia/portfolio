@@ -5,12 +5,14 @@ import AnimatedCursor from "react-animated-cursor";
 import { FaGithub, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import Toggle from "react-styled-toggle";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
   const [isDarkMode, setisDarkMode] = useState(theme === "dark" ? true : false);
 
   const [showProjects, setShowProjects] = useState(false);
+  const [showSkills, setShowSkills] = useState(false);
 
   const changeTheme = (e) => {
     theme === "dark" ? setTheme("light") : setTheme("dark");
@@ -30,10 +32,6 @@ function App() {
 
     localStorage.setItem("theme", theme);
   }, [theme]);
-
-  const showProjectsDiv = () => {
-    setShowProjects(!showProjects);
-  };
 
   return (
     <div className={`${theme}`}>
@@ -67,10 +65,10 @@ function App() {
           </p>
 
           <div className=" linksdiv ">
-            <p onClick={showProjectsDiv} href="/">
+            <p onClick={() => setShowProjects(true)} href="/">
               - PROJECTS
             </p>
-            <p href="/">- MY SKILLS</p>
+            <p onClick={() => setShowSkills(true)}>- MY SKILLS</p>
           </div>
 
           <div className="icons">
@@ -103,9 +101,16 @@ function App() {
         <AnimatePresence>
           {showProjects && (
             <Projects
-              showProjectsDiv={showProjectsDiv}
               isDarkMode={isDarkMode}
+              showProjects={showProjects}
+              setShowProjects={setShowProjects}
             />
+          )}
+        </AnimatePresence>
+
+        <AnimatePresence>
+          {showSkills && (
+            <Skills isDarkMode={isDarkMode} setShowSkills={setShowSkills} />
           )}
         </AnimatePresence>
 
