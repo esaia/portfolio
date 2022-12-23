@@ -60,4 +60,12 @@ export const data = [
     img: "./images/passgenerator.jpg",
     skills: ["Vanilla JavaScript"],
   },
+
+  {
+    title: "Publish Post",
+    githubURL: "https://github.com/esaia/post-publisher-Redux-",
+    websiteURL: "https://publishnewposts.netlify.app/",
+    img: "./images/postspublish.jpg",
+    skills: ["Redux", "redux toolk", "localStorage"],
+  },
 ];
