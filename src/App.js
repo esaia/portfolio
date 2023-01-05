@@ -60,8 +60,11 @@ function App() {
           <p className="text">
             Highly trained in web development. Skilled in frontend
             <span className="text-dec">programming languages.</span> I have
-            worked on various projects, with JavaScript, React. I also have
-            experience in WordPress development.
+            worked on various projects, with JavaScript, React, NodeJS. looking
+            for an opportunity to extend my
+            <span className="text-dec">competence</span> with working an
+            experienced web development team. I am hard worker and motivated to
+            learn more and improve my skills in web development.
           </p>
 
           <div className=" linksdiv ">
@@ -72,13 +75,27 @@ function App() {
           </div>
 
           <div className="icons">
-            <FaFacebookSquare
-              fill={theme === "dark" ? "white" : "rgb(12, 11, 21);"}
-            />
-            <FaGithub fill={theme === "dark" ? "white" : "rgb(12, 11, 21);"} />
-            <FaLinkedin
-              fill={theme === "dark" ? "white" : "rgb(12, 11, 21);"}
-            />
+            <a
+              href="https://www.facebook.com/esaia.gafrindashvili/"
+              target="_blank"
+            >
+              <FaFacebookSquare
+                fill={theme === "dark" ? "white" : "rgb(12, 11, 21);"}
+              />
+            </a>
+            <a href="https://github.com/esaia" target="_blank">
+              <FaGithub
+                fill={theme === "dark" ? "white" : "rgb(12, 11, 21);"}
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/esaia-gaprindashvili-7219771a9/"
+              target="_blank"
+            >
+              <FaLinkedin
+                fill={theme === "dark" ? "white" : "rgb(12, 11, 21);"}
+              />
+            </a>
           </div>
 
           <Toggle
