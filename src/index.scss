@@ -48,18 +48,19 @@ body {
   color: rgb(219, 217, 217);
   font-weight: 100;
   font-family: "Rajdhani", sans-serif;
+  line-height: 25px;
   @include sm {
     font-size: 13px;
+    padding: 0px 20px;
   }
 }
 .text-dec {
   background-color: #1d3147;
   color: rgb(219, 217, 217);
   font-family: "Rajdhani", sans-serif;
-
   font-weight: 100;
-  padding: 3px 6px;
-  margin: 4px;
+  padding: 0px 6px;
+  margin-left: 5px;
   line-height: 32px;
   border-radius: 3px;
 }

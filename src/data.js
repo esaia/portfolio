@@ -38,6 +38,14 @@ export const data = [
   },
 
   {
+    title: "Color Picker",
+    githubURL: "https://github.com/esaia/Color-Picker",
+    websiteURL: "https://precious-banoffee-c15560.netlify.app/",
+    img: "./images/colorPicker.jpg",
+    skills: ["color-picker", "tailwindcss", "framer-motion", "animations"],
+  },
+
+  {
     title: "Slider From Scratch ",
     githubURL: "https://github.com/esaia/Slider",
     websiteURL: "https://esaia.github.io/Slider/",
