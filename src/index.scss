@@ -77,23 +77,22 @@ body {
     display: inline-block;
     position: relative;
     text-decoration: none;
+    cursor: pointer;
 
     &::after {
       content: "";
       position: absolute;
       width: 100%;
-      transform: scaleX(0);
+      transform: scale(0, 1);
       height: 2px;
-      bottom: 0;
+      bottom: -3px;
       left: 0;
       background-color: #385a7a;
-      transform-origin: bottom right;
       transition: transform 0.25s ease-out;
     }
 
     &:hover::after {
-      transform: scaleX(1);
-      transform-origin: bottom left;
+      transform: scale(1, 1);
     }
   }
 }

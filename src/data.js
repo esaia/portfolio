@@ -21,6 +21,15 @@ export const data = [
     websiteURL: "https://realtimechatappwithreact.netlify.app/",
     skills: ["Firebase", "tailwindcss", "realTime", "Firebase"],
   },
+
+  {
+    title: "Documentation Website",
+    githubURL: "https://github.com/esaia/Documentation",
+    websiteURL: "https://aesthetic-axolotl-c60cdd.netlify.app/",
+    img: "./images/documentation.jpg",
+    skills: ["scss", "animations", "doc"],
+  },
+
   {
     title: "Blog",
     githubURL: "https://github.com/esaia/blog_mysql",
