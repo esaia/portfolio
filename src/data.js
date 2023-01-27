@@ -63,6 +63,14 @@ export const data = [
   },
 
   {
+    title: "Multiple Selector (typescreapt)",
+    githubURL: "https://github.com/esaia/multiple-select",
+    websiteURL: "https://luxury-nougat-73e86a.netlify.app/",
+    img: "./images/multiselect.jpg",
+    skills: ["React", "typescreapt"],
+  },
+
+  {
     title: "To Do List",
     githubURL: "https://github.com/esaia/To-Do-List",
     websiteURL: "https://to-do-project-react.netlify.app/",
