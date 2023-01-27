@@ -61,8 +61,17 @@ export const data = [
     img: "./images/slider.jpg",
     skills: ["Vanilla JavaScript", "Slider", "Events"],
   },
+
   {
-    title: "to do list",
+    title: "To Do List",
+    githubURL: "https://github.com/esaia/To-Do-List",
+    websiteURL: "https://to-do-project-react.netlify.app/",
+    img: "./images/todoapp.jpg",
+    skills: ["React", "useContext", "Todo", "LocalStorage"],
+  },
+
+  {
+    title: "To Do App",
     description: "username and password: user/user",
     githubURL: "https://github.com/esaia/My_todo_app-",
     websiteURL: "https://aquamarine-starship-1dc71a.netlify.app/",
