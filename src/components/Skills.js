@@ -38,6 +38,7 @@ const Skills = ({ setShowSkills, isDarkMode }) => {
           <h2>git</h2>
           <h2>github</h2>
           <h2>WordPress</h2>
+          <h2>Linux (ubuntu)</h2>
         </div>
       </div>
     </motion.div>
