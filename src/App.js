@@ -12,7 +12,7 @@ function App() {
   const [isDarkMode, setisDarkMode] = useState(theme === "dark" ? true : false);
 
   const [showProjects, setShowProjects] = useState(false);
-  const [showSkills, setShowSkills] = useState(true);
+  const [showSkills, setShowSkills] = useState(false);
 
   const changeTheme = (e) => {
     theme === "dark" ? setTheme("light") : setTheme("dark");
