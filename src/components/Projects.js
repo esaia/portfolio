@@ -12,18 +12,7 @@ const Projects = ({ isDarkMode, setShowProjects }) => {
       initial={{ opacity: 0.3, bottom: -1000 }}
       animate={{ opacity: 1, bottom: 0 }}
       exit={{ opacity: 0.4, bottom: -900 }}
-      transition={{
-        default: {
-          duration: 0.4,
-          ease: [0, 0.71, 0.2, 1.01],
-        },
-        scale: {
-          type: "spring",
-          damping: 9,
-          stiffness: 100,
-          restDelta: 0.001,
-        },
-      }}
+      transition={{ type: "spring", bounce: 0.25 }}
     >
       <div className="projectsWrap">
         <FaWindowClose

@@ -16,13 +16,28 @@ $screen-sm-min: 576px;
   background-color: rgb(235, 231, 226);
   flex-direction: column;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+
+  @include sm {
+    justify-content: center;
+
+    .skillsDiv {
+      font-size: 11px;
+    }
+  }
 }
 
 .dark {
   .projectmain {
     background-color: rgb(2, 4, 15);
+
+    .skillsDiv {
+      h2 {
+        background-color: #1d3147;
+        color: white;
+      }
+    }
   }
 }
 
