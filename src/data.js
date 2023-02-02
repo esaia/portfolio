@@ -55,6 +55,14 @@ export const data = [
   },
 
   {
+    title: "Slot ",
+    githubURL: "https://github.com/esaia/slots",
+    websiteURL: "https://merry-macaron-48d5fd.netlify.app/",
+    img: "./images/slots.jpg",
+    skills: ["Vanilla JavaScript", "slots", "random numbers"],
+  },
+
+  {
     title: "Slider From Scratch ",
     githubURL: "https://github.com/esaia/Slider",
     websiteURL: "https://esaia.github.io/Slider/",
