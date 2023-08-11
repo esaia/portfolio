@@ -19,7 +19,7 @@ const Skills = ({ setShowSkills, isDarkMode }) => {
           fill="white"
           onClick={() => setShowSkills(false)}
         />
-        <div className="skillsDiv  ">
+        <div className="skillsDiv">
           <h2>HTML5</h2>
           <h2>CSS3</h2>
           <h2>JavaScript</h2>
@@ -30,15 +30,17 @@ const Skills = ({ setShowSkills, isDarkMode }) => {
           <h2>Tailwind Css</h2>
           <h2>scss</h2>
           <h2>styled components</h2>
-          <h2>node js</h2>
+          <h2>Node js</h2>
           <h2>Express</h2>
+          <h2>php</h2>
+          <h2>Laravel</h2>
           <h2>Firebase</h2>
           <h2>mango db</h2>
           <h2>Mysql</h2>
           <h2>git</h2>
           <h2>github</h2>
           <h2>WordPress</h2>
-          <h2>Linux (ubuntu)</h2>
+          <h2>Linux</h2>
         </div>
       </div>
     </motion.div>

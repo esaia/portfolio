@@ -13,6 +13,59 @@ export const data = [
     img: "./images/adjaranet.jpg",
     skills: ["React", "TMDB", "Axios", "Slick slider", "swiper"],
   },
+
+  {
+    title: "Epic Movie Quote",
+    description: "This is Redberry last Full Stack assignment",
+    githubURL: "https://github.com/esaia/epic-movie-front",
+    img: "./images/epic-movie.jpg",
+    websiteURL: "http://epic-movie-quotes-front.esaiag.redberryinternship.ge/",
+    skills: [
+      "Next Js",
+      "laravel",
+      "React Query",
+      "TypeScript",
+      "Pusher",
+      "laravel broadcasting",
+      "React hook form",
+      "Google auth",
+    ],
+  },
+
+  {
+    title: "CV generator",
+    description: "This is Redberry assignment",
+    githubURL: "https://github.com/esaia/cv-generator-Bootcamp",
+    img: "./images/cv.jpg",
+    websiteURL: "https://ubiquitous-axolotl-9bbb2b.netlify.app/",
+    skills: [],
+  },
+  {
+    title: "Covid Questionare",
+    description: "This is Redberry assignment",
+    githubURL: "https://github.com/esaia/covid-questionare",
+    img: "./images/covid-questionare.jpg",
+    websiteURL: "https://covid-questionare-redberry.netlify.app/",
+    skills: ["React", "React hook form", "Framer Motion"],
+  },
+
+  {
+    title: "Coronatime",
+    description: "This is Redberry assignment",
+    githubURL: "https://github.com/esaia/coronatime",
+    img: "./images/dashboard.jpg",
+    websiteURL: "https://github.com/esaia/coronatime",
+    skills: ["php", "laravel", "laravel blades"],
+  },
+
+  {
+    title: "Bible App",
+    githubURL: "https://github.com/esaia/bible",
+    img: "./images/bible.jpg",
+    websiteURL: "https://bibleversesgeo.netlify.app/",
+    skills: ["React Select", "Framer Motion"],
+  },
+
   {
     title: "Realtime Chat App",
     description: "Email: jack@gmail.com Password: 123123",

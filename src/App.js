@@ -58,10 +58,10 @@ function App() {
           </div>
 
           <p className="text">
-            Highly trained in web development. Skilled in frontend
+            Highly trained in web development. Skilled in frontend & backend
             <span className="text-dec">programming languages.</span> I have
-            worked on various projects, with JavaScript, React, NodeJS. looking
-            for an opportunity to extend my
+            worked on various projects, with JavaScript, React, Next JS, Node
+            JS, laravel. looking for an opportunity to extend my
             <span className="text-dec">competence</span> with working an
             experienced web development team. I am hard worker and motivated to
             learn more and improve my skills in web development.
