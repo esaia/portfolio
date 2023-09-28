@@ -97,20 +97,21 @@ function App() {
               />
             </a>
           </div>
-
-          <Toggle
-            onChange={changeTheme}
-            checked={theme === "light" ? false : true}
-            value={theme}
-            width={40}
-            height={20}
-            sliderWidth={12}
-            sliderHeight={12}
-            translate={19}
-            backgroundColorChecked="#1d3147"
-            backgroundColorUnchecked="#e1e3e5"
-            labelLeft={isDarkMode ? "Enable Light Mode" : "Enable Dark Mode"}
-          />
+          <div class="darkModeToogle">
+            <Toggle
+              onChange={changeTheme}
+              checked={theme === "light" ? false : true}
+              value={theme}
+              width={40}
+              height={20}
+              sliderWidth={12}
+              sliderHeight={12}
+              translate={19}
+              backgroundColorChecked="#1d3147"
+              backgroundColorUnchecked="#e1e3e5"
+              labelLeft={isDarkMode ? "Enable Light Mode" : "Enable Dark Mode"}
+            />
+          </div>
         </motion.div>
 
         <h5 className="background_text">HELLO THERE</h5>

@@ -3,15 +3,24 @@ export const data = [
     title: "Airbnb Clone 2.0",
     githubURL: "https://github.com/esaia/Airbnb-clone",
     img: "./images/airbnb.jpg",
-    websiteURL: "https://airbnb-clone-react-v3.netlify.app/",
+    websiteURL: "https://jovial-pudding-a683e5.netlify.app/",
     skills: ["React", "react-date-range", "react-router-dom", "date-fns"],
   },
+
   {
-    title: "Adjaranet Clone 2.0",
-    githubURL: "https://github.com/esaia/adjaranet-clone",
-    websiteURL: "https://adjaranet-clone.netlify.app/",
-    img: "./images/adjaranet.jpg",
-    skills: ["React", "TMDB", "Axios", "Slick slider", "swiper"],
+    title: "Country Information Application",
+    githubURL: "https://github.com/esaia/country_api",
+    websiteURL: "https://jovial-pudding-a683e7.netlify.app",
+    img: "./images/country.jpg",
+    skills: ["React", "cacheing", "react-query", "tailwind"],
+  },
+
+  {
+    title: "Bible App",
+    githubURL: "https://github.com/esaia/bible",
+    img: "./images/bible.jpg",
+    websiteURL: "https://bibleversesgeo.netlify.app/",
+    skills: ["React Select", "cacheing", "Framer Motion"],
   },
 
   {
@@ -59,11 +68,11 @@ export const data = [
   },
 
   {
-    title: "Bible App",
-    githubURL: "https://github.com/esaia/bible",
-    img: "./images/bible.jpg",
-    websiteURL: "https://bibleversesgeo.netlify.app/",
-    skills: ["React Select", "Framer Motion"],
+    title: "Adjaranet Clone 2.0",
+    githubURL: "https://github.com/esaia/adjaranet-clone",
+    websiteURL: "https://adjaranet-clone.netlify.app/",
+    img: "./images/adjaranet.jpg",
+    skills: ["React", "TMDB", "Axios", "Slick slider", "swiper"],
   },
 
   {
