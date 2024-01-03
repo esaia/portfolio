@@ -1,0 +1,50 @@
+@import '../../styles/layout_mixin.scss';
+
+.skills {
+  &__exitIcon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    z-index: 101;
+    padding: 20px 0px;
+
+    svg {
+      font-size: 40px;
+      cursor: pointer;
+
+      fill: rgb(199, 201, 219);
+    }
+  }
+
+  &-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+    &-item {
+      padding: 10px 20px;
+      background-color: var(--background);
+      color: var(--text);
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all ease-in 0.2s;
+      font-size: 14px;
+      &:hover {
+        scale: 1.1;
+      }
+
+      @include maxq(mobile) {
+        font-size: 12px;
+
+        &:last-child {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}

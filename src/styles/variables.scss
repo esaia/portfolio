@@ -1,0 +1,21 @@
+:root {
+  --primary: #f8f8f8;
+  --secondary: #f1f0f0;
+
+  --background: #dcd9d9;
+  --backgroundText: #000000;
+
+  --text: #000000;
+  --textSecondary: #7b6363;
+}
+
+.dark {
+  --primary: #000000;
+  --secondary: #0c1117;
+
+  --background: #1f1f25;
+  --backgroundText: #ffffff;
+
+  --text: #ffffff;
+  --textSecondary: #cbcbcb;
+}

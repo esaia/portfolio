@@ -1,0 +1,256 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  // font-family: "Rajdhani", sans-serif;
+  // font-family: "PT Sans Narrow", sans-serif;
+  font-family: 'Jost', sans-serif;
+  max-height: 100vh;
+  color: white;
+  overflow-y: hidden;
+}
+
+.mainApp {
+  width: 100%;
+  height: 100dvh;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary);
+  transition: all ease 0.2s;
+
+  &__textwrap {
+    text-align: center;
+    max-width: 800px;
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 20px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &-text {
+      // color: #1d3147;
+      color: var(--textSecondary);
+      font-size: 14px;
+      font-weight: 100;
+      line-height: 28px;
+
+      @include maxq(mobile) {
+        font-size: 12px;
+        line-height: 20px;
+      }
+
+      &--dec {
+        background-color: var(--background);
+        color: var(--backgroundText);
+        font-weight: 100;
+        margin-left: 5px;
+        border-radius: 3px;
+        padding: 0px 5px;
+      }
+
+      &--icon {
+        fill: var(--text);
+        transform: translateY(2px);
+      }
+    }
+
+    &-list {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+
+      li {
+        color: var(--text);
+        font-size: 13px;
+      }
+      @include maxq(mobile) {
+        gap: 7px;
+        li {
+          font-size: 12px;
+        }
+      }
+    }
+
+    &-projects {
+      cursor: pointer;
+
+      p {
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        cursor: pointer;
+        color: var(--text);
+        padding: 15px;
+
+        @include maxq(mobile) {
+          font-size: 13px;
+          padding: 5px 20px;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          transform: scale(0);
+          height: 1px;
+          bottom: 5px;
+          left: 0;
+
+          background-color: var(--text);
+          transition: all 0.25s ease-out;
+        }
+
+        &:hover::after {
+          transform: scale(1);
+        }
+      }
+    }
+
+    &-icons {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      height: fit-content;
+      &--link {
+        display: inline-flex;
+        margin: 0 5px;
+        height: fit-content;
+        padding: 5px;
+
+        transition: all ease-in-out 0.2s;
+        &:hover {
+          transform: translateY(-4px);
+        }
+
+        svg {
+          width: 25px;
+          path {
+            color: var(--text);
+          }
+        }
+      }
+    }
+
+    &-darkModeToogle {
+      width: fit-content;
+      margin: auto;
+      span {
+        font-size: 14px;
+        font-family: 'Rajdhani', sans-serif;
+
+        @include maxq(mobile) {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  &-background_text {
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+    font-size: 10vw;
+    font-weight: 700;
+    z-index: 1;
+
+    font-family: Playfair Display, serif;
+
+    overflow: hidden;
+    color: var(--secondary);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+
+// .light {
+
+//   .mainApp {
+//     width: 100%;
+//     background-color: rgb(232, 232, 237);
+//     background-color: $baseColorlight;
+//     cursor: default;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//   }
+
+//   .glitch {
+//     color: #1d3147;
+
+//     &::before,
+//     &::after {
+//       background-color: $baseColorlight;
+//       color: $primaryColorlight;
+//     }
+//   }
+
+//   .text {
+//     color: #1d3147;
+//   }
+//   .text-dec {
+//     background-color: #e1e3e5;
+//     color: #1d3147;
+//   }
+
+//   .linksdiv {
+//     p {
+//       color: #1d3147;
+//     }
+//   }
+
+//   .icon {
+//     background-color: #357bc1;
+//     color: red !important;
+//   }
+
+//   .background_text {
+//     color: #f7f8fa;
+//   }
+
+//   .sc-eDvSVe {
+//     font-size: 12px;
+//   }
+// }
+
+// .dark {
+//   .mainApp {
+//     width: 100%;
+//     background-color: $baseColorDark;
+//     cursor: default;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//   }
+
+//   .glitch {
+//     &::before,
+//     &::after {
+//       background-color: $baseColorDark;
+//       color: $primaryColordark;
+//     }
+//   }
+
+//   .sc-eDvSVe {
+//     color: #e1e3e5;
+//     font-size: 12px;
+//   }
+// }
+
+// Projects

@@ -1,0 +1,45 @@
+$screen-sm-min: 576px;
+
+@mixin maxq($title) {
+  @if $title == desktop-2k {
+    // (2560 - 1921)
+    @media (max-width: 2560px) {
+      @content;
+    }
+  }
+
+  @if $title == desktop {
+    // (1920 - 1401)
+    @media (max-width: 1920px) {
+      @content;
+    }
+  }
+
+  @if $title == laptop {
+    // (1600 - 1280)
+    @media (max-width: 1600px) {
+      @content;
+    }
+  }
+
+  @if $title == tab-landscape {
+    // (1279 - 721)
+    @media (max-width: 1279px) {
+      @content;
+    }
+  }
+
+  @if $title == tab-portrait {
+    // (720 - 671)
+    @media (max-width: 720px) {
+      @content;
+    }
+  }
+
+  @if $title == mobile {
+    // (670 - 0)
+    @media (max-width: 670px) {
+      @content;
+    }
+  }
+}
