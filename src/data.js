@@ -127,14 +127,6 @@ export const data = [
   },
 
   {
-    title: 'Slider From Scratch ',
-    githubURL: 'https://github.com/esaia/Slider',
-    websiteURL: 'https://esaia.github.io/Slider/',
-    img: './images/slider.jpg',
-    skills: ['Vanilla JavaScript', 'Slider', 'Events'],
-  },
-
-  {
     title: 'Multiple Selector (typescreapt)',
     githubURL: 'https://github.com/esaia/multiple-select',
     websiteURL: 'https://luxury-nougat-73e86a.netlify.app/',
@@ -152,11 +144,11 @@ export const data = [
 
   {
     title: 'To Do App',
-    description: 'username and password: user/user',
-    githubURL: 'https://github.com/esaia/My_todo_app-',
-    websiteURL: 'https://aquamarine-starship-1dc71a.netlify.app/',
+    description: 'Todo app with VueJS',
+    githubURL: 'https://github.com/esaia/todo-vue',
+    websiteURL: 'https://candid-mousse-29ab4f.netlify.app/',
     img: './images/mytodo.jpg',
-    skills: ['Reducer', 'useContext', 'Todo', 'LocalStorage'],
+    skills: ['Vue', 'API', 'Todo'],
   },
 
   {
