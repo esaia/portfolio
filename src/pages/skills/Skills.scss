@@ -1,0 +1,50 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/layout_mixin.scss';
+
+.skills {
+  max-width: 500px;
+  margin: auto;
+
+  &__box {
+    margin-top: 20px;
+    & > * {
+      padding: 5px 0;
+      @for $i from 1 through 100 {
+        &:nth-child(#{$i}) {
+          @include fade-in-mix($i);
+        }
+      }
+    }
+  }
+
+  &-back {
+    color: var(--textSecondary);
+    cursor: pointer;
+    svg {
+      transition: all ease-in 0.2s;
+      &:hover {
+        color: var(--text);
+
+        transform: translateX(-2px);
+      }
+    }
+  }
+}
+
+.skill {
+  margin-bottom: 20px;
+  color: var(--text);
+  &-title {
+    text-transform: capitalize;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    &--name {
+      color: var(--textSecondary);
+      margin-right: 10px;
+    }
+  }
+}

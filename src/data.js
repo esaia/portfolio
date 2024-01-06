@@ -2,19 +2,13 @@ import { FaGithub, FaFacebookSquare, FaLinkedin } from 'react-icons/fa';
 
 export const data = [
   {
-    title: 'Airbnb Clone 2.0',
-    githubURL: 'https://github.com/esaia/Airbnb-clone',
-    img: './images/airbnb.jpg',
-    websiteURL: 'https://jovial-pudding-a683e5.netlify.app/',
-    skills: ['React', 'react-date-range', 'react-router-dom', 'date-fns'],
-  },
-
-  {
     title: 'Country Information Application',
     githubURL: 'https://github.com/esaia/country_api',
     websiteURL: 'https://jovial-pudding-a683e7.netlify.app',
     img: './images/country.jpg',
-    skills: ['React', 'cacheing', 'react-query', 'tailwind'],
+    skills: ['React', 'cacheing', 'react-query', 'tailwind', 'MUI (Material-UI)'],
+    description:
+      'This app has information about different Countries and their airports. Built with React and MUI (Material-UI). The application uses caching to avoid send many requests. ',
   },
 
   {
@@ -23,46 +17,59 @@ export const data = [
     img: './images/bible.jpg',
     websiteURL: 'https://bibleversesgeo.netlify.app/',
     skills: ['React Select', 'cacheing', 'Framer Motion'],
+    description:
+      'The BibleVerse Projector App is a user-friendly application designed to display Bible verses on projectors or large screens in 3 different languages: Georgian, English and Russian at the same time.',
   },
 
   {
-    title: 'Epic Movie Quote',
-    description: 'This is Redberry last Full Stack assignment',
+    title: 'Airbnb Clone 2.0',
+    githubURL: 'https://github.com/esaia/Airbnb-clone',
+    img: './images/airbnb.jpg',
+    websiteURL: 'https://jovial-pudding-a683e5.netlify.app/',
+    skills: ['React', 'react-date-range', 'react-router-dom', 'date-fns'],
+    description: 'Airbnb Clone 2.0, powered by React.',
+  },
+
+  {
+    title: 'Epic Movie Quote (front)',
     githubURL: 'https://github.com/esaia/epic-movie-front',
     img: './images/epic-movie.jpg',
-    websiteURL: 'http://epic-movie-quotes-front.esaiag.redberryinternship.ge/',
-    skills: [
-      'Next Js',
-      'laravel',
-      'React Query',
-      'TypeScript',
-      'Pusher',
-      'laravel broadcasting',
-      'React hook form',
-      'Google auth',
-    ],
+    websiteURL: 'https://github.com/esaia/epic-movie-front',
+    skills: ['Next Js', 'React Query', 'TypeScript', 'Pusher', 'React hook form'],
+    description:
+      'This is a movie quote website built with Next.js. Users can engage with the website by liking and commenting. Users can choose their preferred language to read quotes in Georgia or English. The website provides Google authentication ',
+  },
+
+  {
+    title: 'Epic Movie Quote (back)',
+    githubURL: 'https://github.com/esaia/epic-movie-back',
+    img: './images/epic-movie.jpg',
+    websiteURL: 'https://github.com/esaia/epic-movie-back',
+    skills: ['laravel', 'Pusher', 'laravel broadcasting', 'Google auth'],
+    description:
+      'This app built using Laravel. Users can add movies/quotes, and engage in discussions by leaving comments. Users have the ability to update their email passwords ',
   },
 
   {
     title: 'CV generator',
-    description: 'This is Redberry assignment',
     githubURL: 'https://github.com/esaia/cv-generator-Bootcamp',
     img: './images/cv.jpg',
     websiteURL: 'https://ubiquitous-axolotl-9bbb2b.netlify.app/',
     skills: [],
+    description: 'This user-friendly web app simplifies the creation of professional CVs.',
   },
   {
     title: 'Covid Questionare',
-    description: 'This is Redberry assignment',
     githubURL: 'https://github.com/esaia/covid-questionare',
     img: './images/covid-questionare.jpg',
     websiteURL: 'https://covid-questionare-redberry.netlify.app/',
     skills: ['React', 'React hook form', 'Framer Motion'],
+    description:
+      'The COVID-Questionnaire website is a user-friendly platform designed to help individuals assess their potential risk of COVID-19 infection.',
   },
 
   {
     title: 'Coronatime',
-    description: 'This is Redberry assignment',
     githubURL: 'https://github.com/esaia/coronatime',
     img: './images/dashboard.jpg',
     websiteURL: 'https://github.com/esaia/coronatime',
@@ -75,6 +82,8 @@ export const data = [
     websiteURL: 'https://adjaranet-clone.netlify.app/',
     img: './images/adjaranet.jpg',
     skills: ['React', 'TMDB', 'Axios', 'Slick slider', 'swiper'],
+    description:
+      'Adjaranet Clone Website built with react. I am using TBDB api to fetch the movies, and swiper slider for display them',
   },
 
   {
@@ -180,28 +189,13 @@ export const socialLinks = [
   },
 ];
 
-export const skills = [
-  'HTML5',
-  'CSS3',
-  'TypeScript',
-  'React Js',
-  'Redux',
-  'Next JS',
-  'vue JS',
-  'Nuxt',
-  'pinia',
-  'Tailwind Css',
-  'scss',
-  'styled components',
-  'Node js',
-  'Express',
-  'php',
-  'Laravel',
-  'Firebase',
-  'mango db',
-  'Mysql',
-  'git',
-  'github',
-  'WordPress',
-  'Linux',
-];
+export const skills = {
+  front: ['TypeScript', 'React JS', 'Next JS', 'Vue JS', 'Nuxt'],
+
+  back: ['Node.js', 'Express', 'PHP', 'Laravel'],
+  style: ['Tailwind CSS', 'SCSS', 'Styled Components'],
+  database: ['Firebase', 'MongoDB', 'MySQL'],
+  'version Control': ['Git', 'GitHub'],
+  'content Management': ['WordPress'],
+  'operating System': ['macOS', 'Linux'],
+};

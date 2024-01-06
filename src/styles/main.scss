@@ -1,4 +1,16 @@
-@import "./layout_mixin.scss";
-@import "./variables.scss";
-@import "./glitch.scss";
-@import "./index.scss";
+@import './mixins.scss';
+@import './layout_mixin.scss';
+@import './variables.scss';
+@import './glitch.scss';
+@import './index.scss';
+
+* {
+  padding: 0px;
+  margin: 0px;
+  // font-family: "Rajdhani", sans-serif;
+  // font-family: "PT Sans Narrow", sans-serif;
+  font-family: 'Jost', sans-serif;
+  &::selection {
+    background-color: #8884;
+  }
+}

@@ -1,0 +1,102 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/layout_mixin.scss';
+
+.projects {
+  max-width: 500px;
+  margin: auto;
+
+  &-back {
+    color: var(--textSecondary);
+    cursor: pointer;
+    svg {
+      transition: all ease-in 0.2s;
+      &:hover {
+        color: var(--text);
+
+        transform: translateX(-2px);
+      }
+    }
+  }
+
+  & > * {
+    padding: 5px 0;
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        @include fade-in-mix($i);
+      }
+    }
+  }
+}
+
+.projects-card {
+  border: solid var(--background) 1px;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &-title {
+    color: var(--text);
+    font-size: 20px;
+
+    @include maxq(mobile) {
+      font-size: 15px;
+    }
+  }
+  &-links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--textSecondary);
+
+    &-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      transition: all ease 0.5s;
+
+      font-size: 12px;
+
+      &:hover {
+        color: var(--text);
+      }
+
+      &--icon {
+        width: 10px;
+        height: 10px;
+      }
+      &--text {
+        text-decoration: none;
+        color: unset;
+      }
+    }
+  }
+
+  &-desc {
+    color: var(--textSecondary);
+    font-size: 12px;
+  }
+  &-tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 11px;
+    p {
+      background-color: var(--background);
+      color: var(--textTags);
+      //   font-weight: bold;
+      border-radius: 20px;
+      padding: 4px 10px;
+      cursor: pointer;
+
+      @include maxq(mobile) {
+        font-size: 9px;
+      }
+    }
+  }
+}

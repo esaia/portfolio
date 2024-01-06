@@ -1,12 +1,15 @@
-$steps: 20;
+$steps: 15;
 
 .glitch {
   position: relative;
+  padding: 0 !important;
+  margin-bottom: 20px;
 
-  font-size: 40px;
-  font-family: "Exo", sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-family: 'Exo', sans-serif;
   font-weight: 600;
-  text-align: center;
+  // text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.01em;
   transform: scale3d(1, 1, 1);
@@ -14,7 +17,7 @@ $steps: 20;
   color: var(--text);
 
   @include maxq(mobile) {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 
   &::before,
@@ -28,24 +31,28 @@ $steps: 20;
     clip: rect(0, 900px, 0, 0);
     background-color: var(--primary);
     color: var(--text);
+
+    @include maxq(mobile) {
+      animation: unset !important;
+    }
   }
 
   &::before {
     left: 7px;
-    text-shadow: 1px 5 green;
+    text-shadow: 2px 0 green;
     animation: glitch-effect 3s infinite linear alternate-reverse;
   }
 
   &::after {
     left: 3px;
-    text-shadow: -1px 0 red;
+    text-shadow: -2px 0 red;
     animation: glitch-effect 2s infinite linear alternate-reverse;
   }
 }
 
 @keyframes glitch-effect {
   @for $i from 0 through $steps {
-    #{percentage($i*(1/$steps))} {
+    #{percentage($i*(1 / $steps))} {
       clip: rect(random(100) + px, 9999px, random(100) + px, 0);
     }
   }

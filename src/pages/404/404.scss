@@ -1,0 +1,21 @@
+.not-found {
+  height: 50svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  &-text {
+    color: var(--text);
+    font-size: 20px;
+  }
+
+  &-link {
+    color: var(--textSecondary);
+    font-size: 10px;
+    text-decoration: underline;
+    &:hover {
+      color: var(--text);
+    }
+  }
+}
