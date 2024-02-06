@@ -75,7 +75,6 @@ const Home = () => {
         <p className="home__textwrap-text">
           looking for an opportunity to extend my
           <span className="home__textwrap-text--dec">competence</span> with working an experienced web development team.
-          I am hard worker and motivated to learn more and improve my skills in web development.
         </p>
 
         <div className="home__textwrap-projects ">

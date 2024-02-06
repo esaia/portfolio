@@ -8,9 +8,11 @@ import { Link } from 'react-router-dom';
 const Projects = () => {
   return (
     <div className="projects">
-      <Link to="/" className="projects-back">
-        <MdOutlineArrowBack />
-      </Link>
+      <div className="projects-back">
+        <Link to="/">
+          <MdOutlineArrowBack />
+        </Link>
+      </div>
 
       {data.map((item) => {
         return (

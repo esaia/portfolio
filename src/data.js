@@ -194,7 +194,7 @@ export const skills = {
 
   back: ['Node.js', 'Express', 'PHP', 'Laravel'],
   style: ['Tailwind CSS', 'SCSS', 'Styled Components'],
-  database: ['Firebase', 'MongoDB', 'MySQL'],
+  database: ['MySQL', 'MongoDB', 'Firebase'],
   'version Control': ['Git', 'GitHub'],
   'content Management': ['WordPress'],
   'operating System': ['macOS', 'Linux'],

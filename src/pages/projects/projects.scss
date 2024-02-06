@@ -1,15 +1,25 @@
-@import '../../styles/mixins.scss';
-@import '../../styles/layout_mixin.scss';
+// @import '../../styles/mixins.scss';
+// @import '../../styles/layout_mixin.scss';
+@import '../../styles/main.scss';
 
 .projects {
   max-width: 500px;
   margin: auto;
+  position: relative;
 
   &-back {
     color: var(--textSecondary);
     cursor: pointer;
+    width: 100%;
+    top: 0;
+    position: sticky;
+    z-index: 2;
+    background-color: var(--primary);
+
     svg {
       transition: all ease-in 0.2s;
+      color: var(--text);
+
       &:hover {
         color: var(--text);
 
