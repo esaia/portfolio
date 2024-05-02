@@ -2,13 +2,12 @@ import { FaGithub, FaFacebookSquare, FaLinkedin } from 'react-icons/fa';
 
 export const data = [
   {
-    title: 'Country Information Application',
-    githubURL: 'https://github.com/esaia/country_api',
-    websiteURL: 'https://jovial-pudding-a683e7.netlify.app',
-    img: './images/country.jpg',
-    skills: ['React', 'cacheing', 'react-query', 'tailwind', 'MUI (Material-UI)'],
-    description:
-      'This app has information about different Countries and their airports. Built with React and MUI (Material-UI). The application uses caching to avoid send many requests. ',
+    title: 'Movies App',
+    githubURL: 'https://qmovies.net/',
+    img: './images/qmovies.jpg',
+    websiteURL: 'https://qmovies.net/',
+    skills: ['NextJs 14', 'Laravel', 'cacheing'],
+    description: 'This is a full stack Movies application',
   },
 
   {
@@ -19,6 +18,16 @@ export const data = [
     skills: ['React Select', 'cacheing', 'Framer Motion'],
     description:
       'The BibleVerse Projector App is a user-friendly application designed to display Bible verses on projectors or large screens in 3 different languages: Georgian, English and Russian at the same time.',
+  },
+
+  {
+    title: 'Country Information Application',
+    githubURL: 'https://github.com/esaia/country_api',
+    websiteURL: 'https://jovial-pudding-a683e7.netlify.app',
+    img: './images/country.jpg',
+    skills: ['React', 'cacheing', 'react-query', 'tailwind', 'MUI (Material-UI)'],
+    description:
+      'This app has information about different Countries and their airports. Built with React and MUI (Material-UI). The application uses caching to avoid send many requests. ',
   },
 
   {
@@ -192,7 +201,7 @@ export const socialLinks = [
 export const skills = {
   front: ['TypeScript', 'React JS', 'Next JS', 'Vue JS', 'Nuxt'],
 
-  back: ['Node.js', 'Express', 'PHP', 'Laravel'],
+  back: ['PHP', 'Laravel', 'Node.js', 'Express'],
   style: ['Tailwind CSS', 'SCSS', 'Styled Components'],
   database: ['MySQL', 'MongoDB', 'Firebase'],
   'version Control': ['Git', 'GitHub'],
