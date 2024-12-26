@@ -21,6 +21,7 @@
     color: var(--textSecondary);
     cursor: pointer;
     svg {
+      padding: 5px 0;
       transition: all ease-in 0.2s;
       &:hover {
         color: var(--text);
@@ -36,6 +37,7 @@
   color: var(--text);
   &-title {
     text-transform: capitalize;
+    margin-bottom: 4px;
   }
   &__box {
     display: flex;

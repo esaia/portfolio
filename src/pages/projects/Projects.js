@@ -54,15 +54,23 @@ const ProjectsCard = ({ title, githubURL, websiteURL, skills, description }) => 
               {generatePath(githubURL) || 'Github Link'}
             </a>
           </div>
-          -
-          <div className="projects-card-links-box">
-            <div className="projects-card-links-box--icon">
-              <FaLink />
-            </div>
-            <a className="projects-card-links-box--text" href={websiteURL} target="_blank" rel="noreferrer">
-              website
-            </a>
-          </div>
+
+          {websiteURL ? (
+            <>
+              -
+              <div className="projects-card-links-box">
+                <div className="projects-card-links-box--icon">
+                  <FaLink />
+                </div>
+
+                <a className="projects-card-links-box--text" href={websiteURL} target="_blank" rel="noreferrer">
+                  website
+                </a>
+              </div>
+            </>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
 

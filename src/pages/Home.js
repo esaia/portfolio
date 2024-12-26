@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import Toggle from 'react-styled-toggle';
 
 import { socialLinks } from '../data';
 
-import { FaLaravel, FaReact, FaVuejs, FaNodeJs } from 'react-icons/fa';
+import { FaLaravel, FaReact, FaVuejs } from 'react-icons/fa';
 import { SiTypescript, SiNuxtdotjs, SiNextdotjs } from 'react-icons/si';
+import { TbBrandReactNative } from 'react-icons/tb';
 
 import { Link } from 'react-router-dom';
 import { useThemeContext } from '../context/ThemeContext';
@@ -25,6 +26,19 @@ const Home = () => {
     return !isDarkMode;
   };
 
+  const technologies = useMemo(
+    () => [
+      { name: 'Typescript', icon: <SiTypescript /> },
+      { name: 'React', icon: <FaReact /> },
+      { name: 'Next JS', icon: <SiNextdotjs /> },
+      { name: 'React Native', icon: <TbBrandReactNative /> },
+      { name: 'Vue JS', icon: <FaVuejs /> },
+      { name: 'Nuxt', icon: <SiNuxtdotjs /> },
+      { name: 'Laravel', icon: <FaLaravel /> },
+    ],
+    []
+  );
+
   return (
     <div className="home">
       <div
@@ -43,33 +57,17 @@ const Home = () => {
         </div>
 
         <p className="home__textwrap-text">
-          Highly trained in web development. Skilled in frontend & backend
+          Highly trained in web & mobile development. Skilled in frontend & backend
           <span className="home__textwrap-text--dec">programming languages</span>. I have worked on various projects,
           with:
         </p>
 
         <ul className="home__textwrap-list">
-          <li>
-            <TextIcon name={'Typescript'} icon={<SiTypescript />} />
-          </li>
-          <li>
-            <TextIcon name={'React'} icon={<FaReact />} />
-          </li>
-          <li>
-            <TextIcon name={'Next JS'} icon={<SiNextdotjs />} />
-          </li>
-          <li>
-            <TextIcon name={'Vue JS'} icon={<FaVuejs />} />
-          </li>
-          <li>
-            <TextIcon name={'Nuxt'} icon={<SiNuxtdotjs />} />
-          </li>
-          <li>
-            <TextIcon name={'Node JS'} icon={<FaNodeJs />} />
-          </li>
-          <li>
-            <TextIcon name={'laravel'} icon={<FaLaravel />} />
-          </li>
+          {technologies.map((tech, index) => (
+            <li key={index}>
+              <TextIcon name={tech.name} icon={tech.icon} />
+            </li>
+          ))}
         </ul>
 
         <p className="home__textwrap-text">

@@ -19,6 +19,7 @@
     svg {
       transition: all ease-in 0.2s;
       color: var(--text);
+      padding: 5px 0;
 
       &:hover {
         color: var(--text);
@@ -30,7 +31,7 @@
 
   & > * {
     padding: 5px 0;
-    @for $i from 1 through 10 {
+    @for $i from 1 through 100 {
       &:nth-child(#{$i}) {
         @include fade-in-mix($i);
       }
@@ -58,8 +59,11 @@
   &-links {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 4px;
     color: var(--textSecondary);
+    font-size: 13px;
+    margin-top: 4px;
 
     &-box {
       display: flex;
@@ -69,15 +73,18 @@
       cursor: pointer;
       transition: all ease 0.5s;
 
-      font-size: 12px;
+      font-size: 13px;
 
       &:hover {
         color: var(--text);
       }
 
       &--icon {
-        width: 10px;
-        height: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // width: 10px;
+        // height: 10px;
       }
       &--text {
         text-decoration: none;
@@ -88,7 +95,7 @@
 
   &-desc {
     color: var(--textSecondary);
-    font-size: 12px;
+    font-size: 13px;
   }
   &-tags {
     display: flex;
@@ -102,7 +109,6 @@
       //   font-weight: bold;
       border-radius: 20px;
       padding: 4px 10px;
-      cursor: pointer;
 
       @include maxq(mobile) {
         font-size: 9px;
